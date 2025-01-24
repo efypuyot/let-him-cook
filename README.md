@@ -16,7 +16,7 @@ Food waste is a significant problem worldwide, with a substantial amount of edib
 
 ## Features
 
-- **Recipe Generator**: Let Him Cook utilizes advanced algorithms to generate recipes based on the ingredients provided by the user, maximizing the use of available food items.
+- **Recipe Generator**: Let Him Cook utilizes advanced algorithms to generate recipes based on the ingredients and their amounts provided by the user, maximizing the use of available food items.
 
 - **Food Waste Estimation**: Our platform provides an estimate of the amount of food waste prevented by using the suggested recipes, encouraging users to make sustainable choices and reduce their environmental impact.
 
