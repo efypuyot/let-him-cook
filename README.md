@@ -37,7 +37,7 @@ To install Let Him Cook, follow these steps:
 
 To use Let Him Cook, follow these steps:
 
-1. Run the application: `npm run serve`
+1. Run the application: `cd frontend` then, `npm run serve` && `..`, `cd backend` then, `py manage.py runserver`
 2. Open your preferred web browser and navigate to `http://localhost:8000`
 3. [todo] Enter the ingredients you have on hand.
 4. [todo] Specify any dietary preferences, if applicable.
