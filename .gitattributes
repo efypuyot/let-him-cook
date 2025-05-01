@@ -1,0 +1,2 @@
+backend/faiss_index.bin filter=lfs diff=lfs merge=lfs -text
+backend/final_filtered_recipes.json filter=lfs diff=lfs merge=lfs -text
