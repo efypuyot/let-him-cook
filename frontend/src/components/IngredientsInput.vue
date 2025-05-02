@@ -74,7 +74,8 @@
           const response = await fetch(`${API_URL}/recommend`, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ ingredients })
+            body: JSON.stringify({ ingredients }),
+            'bypass-tunnel-reminder' : true
           });
 
           if (!response.ok) throw new Error('Server error');
