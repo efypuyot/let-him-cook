@@ -69,7 +69,6 @@
 
         try {
           const API_URL = process.env.VUE_APP_API_URL || "http://localhost:5000";
-          console.log("Using API URL:", API_URL);  // Debug line
 
           const response = await fetch(`${API_URL}/recommend`, {
             method: 'POST',

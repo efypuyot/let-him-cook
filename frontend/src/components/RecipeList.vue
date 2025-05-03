@@ -13,9 +13,10 @@
         <h3>{{ recipe.title }}</h3>
       </div>
       <div v-if="recipes.length === 0" class="empty-state">
-        No recipes found. Try different ingredients.
+        No recipes found.
       </div>
     </div>
+    <div class="footer-div-list"> </div>
   </div>
 </template>
 
@@ -24,7 +25,7 @@ import HeaderComponent from './Header.vue';
 
 export default {
   components: {
-    HeaderComponent
+    HeaderComponent,
   },
   data() {
     return {
@@ -91,5 +92,9 @@ export default {
   text-align: center;
   padding: 20px;
   color: #666;
+}
+
+.footer-div-list {
+  height: 8%!important;
 }
 </style>

@@ -97,28 +97,28 @@
 
   .recipe-detail {
     width: 60%;
-    padding: 20px;
+    padding: 5%;
     max-width: 60%;
     margin: 0 auto;
   }
   
   .section {
-    margin-bottom: 30px;
+    margin-bottom: 2%;
   }
   
   h1 {
     color: #333;
-    margin-bottom: 30px;
   }
   
   h2 {
     border-bottom: 1px solid #eee;
-    padding-bottom: 5px;
+    padding: 5%;
     color: #444;
   }
   
   ul, ol {
     text-align: start;
+    padding: 5%;
   }
   
   li {
