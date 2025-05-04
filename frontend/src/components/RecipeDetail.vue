@@ -119,6 +119,7 @@
 
     methods: {
         goToInputPage() {
+            this.clearProgress();
             this.$router.push('/');
         },
         saveProgress() {
