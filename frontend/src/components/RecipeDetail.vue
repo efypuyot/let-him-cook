@@ -142,6 +142,12 @@
             this.checkedDirections = new Array(this.recipe.directions?.length || 0).fill(false);
           }
         },
+        clearProgress() {
+          // Optional method to clear progress
+          this.checkedIngredients = new Array(this.parsedIngredients.length).fill(false);
+          this.checkedDirections = new Array(this.recipe.directions?.length || 0).fill(false);
+          this.saveProgress();
+        },
         checkCompletion() {
           this.saveProgress();
           
