@@ -74,9 +74,9 @@
             method: 'POST',
             headers: { 
               'Content-Type': 'application/json',
-              'bypass-tunnel-reminder' : true,
+              'bypass-tunnel-reminder': true,
               'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3'
-             },
+            },
             body: JSON.stringify({ ingredients }),
           });
 
@@ -87,25 +87,28 @@
           // Add temporary IDs to each recipe
           const recipesWithIds = data.map((recipe, index) => ({
             ...recipe,
-            tempId: index + 1 // Simple sequential ID
+            tempId: index + 1
           }));
 
-          // Success toast
+          // Store FIRST
+          sessionStorage.setItem('recipes', JSON.stringify(recipesWithIds));
+          
+          // Then navigate - use await to ensure completion
+          await this.$router.push({
+            name: 'RecipeList',
+            query: { count: recipesWithIds.length }
+          }).catch(err => {
+            console.error('Navigation error:', err);
+            throw new Error('Navigation failed');
+          });
+          
+          // Only show success if navigation worked
           toast.success(`found ${recipesWithIds.length} recipes!`, {
             id: toastId,
             position: 'bottom-center'
           });
           
-          this.$router.push({
-            name: 'RecipeList',
-            query: { count: recipesWithIds.length } // Lightweight URL
-          });
-          
-          // Store in session storage
-          sessionStorage.setItem('recipes', JSON.stringify(recipesWithIds));
-          
         } catch (error) {
-          // Error toast (replaces loading toast)
           toast.error(`failed: ${error.message}`, {
             id: toastId,
             position: 'bottom-center'
