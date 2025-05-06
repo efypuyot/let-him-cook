@@ -115,7 +115,7 @@ CORS(app, resources={
         "origins": [ 
             "http://localhost:8080",
             "https://let-him-cook-2025.vercel.app",
-            "https://16e7-112-208-66-108.ngrok-free.app",
+            "https://6fd8-202-92-153-104.ngrok-free.app",
             "https://let-him-cook.loca.lt"
         ],
         "methods": ["POST", "OPTIONS"],
