@@ -16,7 +16,7 @@
 #         "origins": [ 
 #             "http://localhost:8080",
 #             "https://let-him-cook-2025.vercel.app",  # Your Vercel URL
-#             "https://ec2e-112-208-66-108.ngrok-free.app",  # Ngrok URL
+#             "https://dde9-112-208-66-108.ngrok-free.app",  # Ngrok URL
 #             "https://let-him-cook.loca.lt" # Localtunnel URL
 #         ],
 #         "methods": ["POST", "OPTIONS"],
@@ -115,7 +115,7 @@ CORS(app, resources={
         "origins": [ 
             "http://localhost:8080",
             "https://let-him-cook-2025.vercel.app",
-            "https://ec2e-112-208-66-108.ngrok-free.app",
+            "https://dde9-112-208-66-108.ngrok-free.app",
             "https://let-him-cook.loca.lt"
         ],
         "methods": ["POST", "OPTIONS"],
