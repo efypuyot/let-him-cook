@@ -18,8 +18,6 @@ Food waste is a significant problem worldwide, with a substantial amount of edib
 
 - **Recipe Generator**: Let Him Cook utilizes advanced algorithms to generate recipes based on the ingredients and their amounts provided by the user, maximizing the use of available food items.
 
-- **Food Waste Estimation**: Our platform provides an estimate of the amount of food waste prevented by using the suggested recipes, encouraging users to make sustainable choices and reduce their environmental impact.
-
 - **User-Friendly Interface**: Let Him Cook offers a simple and intuitive interface, making it easy for users to navigate, input ingredients, and find the recipes they need.
 
 - **Personalized Filipino Recipes**: The app tailors recipe suggestions to users' preferences and dietary restrictions, with a focus on Filipino cuisine. It highlights well-loved dishes such as adobo, sinigang, kare-kare, and more, ensuring users can create familiar and comforting meals using ingredients they already have on hand.
@@ -43,10 +41,9 @@ To use Let Him Cook, follow these steps:
    > `..`, `cd backend` then, `py manage.py runserver`
 3. Open your preferred web browser and navigate to `http://localhost:8000`
 4. [todo] Enter the ingredients you have on hand.
-5. [todo] Specify any dietary preferences, if applicable.
-6. [todo] Click on the "Generate Recipes" button.
-7. [todo] Browse through the suggested recipes and select the one that suits your taste.
-8. [todo] Follow the provided instructions to prepare your meal and enjoy!
+5. [todo] Click on the "Generate Recipes" button.
+6. [todo] Browse through the suggested recipes and select the one that suits your taste.
+7. [todo] Follow the provided instructions to prepare your meal and enjoy!
 
 ## License
 
